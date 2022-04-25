@@ -1658,6 +1658,14 @@ img.svg {
     background-position: center;
 }
 
+.portfolio_size {
+    width: 300px;
+    height: 300px;
+}
+
+.portfolio_bg {
+    background: #E0DEDF;
+}
 
 /*---------------------------------------------------*/
 
