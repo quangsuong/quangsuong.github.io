@@ -121,9 +121,11 @@ a:focus-visible {
 }
 
 .arlo_tm_universal_box_wrap.particle {
-    min-height: 660px;
+    min-height: 100vh;
     height: 100vh;
-    max-height: 980px;
+    min-height: 100dvh;
+    height: 100dvh;
+    max-height: none;
     background-image: linear-gradient(118deg, rgba(8, 16, 31, .86), rgba(8, 16, 31, .45)), url("../img/hero/5.jpg");
 }
 
@@ -618,10 +620,6 @@ a:focus-visible {
 }
 
 @media (max-width: 768px) {
-    .arlo_tm_universal_box_wrap.particle {
-        min-height: 590px;
-    }
-
     .arlo_tm_about_wrap {
         padding-bottom: 66px;
     }
