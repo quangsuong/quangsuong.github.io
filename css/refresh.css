@@ -1,0 +1,686 @@
+:root {
+    --ink: #0c1424;
+    --ink-soft: #18243a;
+    --accent: #b8ef68;
+    --accent-dark: #57851b;
+    --paper: #f4f7f8;
+    --text: #273246;
+    --muted: #667287;
+    --line: #e2e8ed;
+    --card-shadow: 0 18px 48px rgba(14, 27, 48, .08);
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 28px;
+}
+
+body {
+    color: var(--text);
+    background: var(--paper);
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: 1.75;
+}
+
+a {
+    transition: color .2s ease, background-color .2s ease, transform .2s ease;
+}
+
+a:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 4px;
+}
+
+.arlo_tm_leftpart_wrap {
+    width: 264px;
+    background: var(--ink);
+}
+
+.arlo_tm_leftpart_wrap.hide,
+.arlo_tm_leftpart_wrap.opened {
+    left: -264px;
+}
+
+.arlo_tm_rightpart {
+    padding-left: 264px;
+}
+
+.arlo_tm_leftpart_wrap .logo_wrap {
+    margin-bottom: 34px;
+    padding: 38px 20px 30px;
+    background: transparent;
+    border-color: rgba(255, 255, 255, .1);
+}
+
+.arlo_tm_leftpart_wrap .logo_wrap img {
+    width: min(190px, 100%);
+    height: auto;
+}
+
+.arlo_tm_leftpart_wrap .menu_list_wrap {
+    padding-left: 42px;
+}
+
+.arlo_tm_leftpart_wrap .menu_list_wrap ul li a {
+    padding-bottom: 15px;
+    color: #d7dfeb;
+    font-size: 13px;
+    letter-spacing: .09em;
+}
+
+.arlo_tm_leftpart_wrap .menu_list_wrap ul li a:hover,
+.arlo_tm_leftpart_wrap .leftpart_bottom .social_wrap ul li a:hover {
+    color: var(--accent);
+}
+
+.arlo_tm_leftpart_wrap .menu_list_wrap ul li a:before {
+    background: var(--accent);
+}
+
+.arlo_tm_leftpart_wrap .leftpart_bottom {
+    left: 42px;
+}
+
+.arlo_tm_leftpart_wrap .leftpart_bottom .social_wrap ul li a {
+    color: #d7dfeb;
+}
+
+.arlo_tm_leftpart_wrap .leftpart_bottom .social_wrap ul li a.teams-social-link {
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background: #6264a7;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.arlo_tm_leftpart_wrap .leftpart_bottom .social_wrap ul li a.teams-social-link:hover {
+    background: #4d4f91;
+    color: #fff;
+}
+
+.arlo_tm_leftpart_wrap .arlo_tm_resize {
+    color: var(--ink);
+    background: var(--accent);
+}
+
+.arlo_tm_rightpart .rightpart_inner {
+    background: var(--paper);
+}
+
+.arlo_tm_hero_header_wrap {
+    margin-bottom: 0;
+}
+
+.arlo_tm_universal_box_wrap.particle {
+    min-height: 660px;
+    height: 100vh;
+    max-height: 980px;
+    background-image: linear-gradient(118deg, rgba(8, 16, 31, .86), rgba(8, 16, 31, .45)), url("../img/hero/5.jpg");
+}
+
+.arlo_tm_universal_box_wrap.particle:after {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 74% 22%, rgba(184, 239, 104, .2), transparent 34%);
+    content: "";
+    pointer-events: none;
+}
+
+.arlo_tm_universal_box_wrap.particle .particle_overlay {
+    background: linear-gradient(180deg, rgba(8, 16, 31, .12), rgba(8, 16, 31, .58));
+}
+
+#particles-js {
+    opacity: .3;
+}
+
+.arlo_tm_hero_header_wrap .inner_content {
+    max-width: 960px;
+    padding: 24px;
+}
+
+.arlo_tm_hero_header_wrap .image_wrap {
+    width: 154px;
+    height: 154px;
+    margin-bottom: 30px;
+}
+
+.arlo_tm_hero_header_wrap .image_wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, .78);
+    box-shadow: 0 16px 42px rgba(0, 0, 0, .25);
+}
+
+.arlo_tm_hero_header_wrap .name_holder h3 {
+    margin: 0;
+    font-size: clamp(38px, 5vw, 66px);
+    font-weight: 700;
+    letter-spacing: -.055em;
+    line-height: 1.08;
+}
+
+.arlo_tm_hero_header_wrap .name_holder h3 span {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.arlo_tm_hero_header_wrap .text_typing p {
+    margin: 18px 0 0;
+    color: #e1e8f1;
+    font-size: clamp(17px, 2vw, 22px);
+    font-weight: 400;
+}
+
+.arlo_tm_animation_text_word {
+    color: var(--accent);
+}
+
+.arlo_tm_arrow_wrap a {
+    color: var(--accent);
+}
+
+.arlo_tm_title_holder {
+    padding-bottom: 54px;
+}
+
+.arlo_tm_title_holder:before {
+    width: 4px;
+    height: 52px;
+    background: var(--accent-dark);
+    border-radius: 4px;
+}
+
+.arlo_tm_title_holder h3 {
+    color: var(--ink);
+    font-size: clamp(32px, 4vw, 44px);
+    font-weight: 700;
+    letter-spacing: -.045em;
+    text-transform: none;
+}
+
+.arlo_tm_title_holder span {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--muted);
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+}
+
+.arlo_tm_about_wrapper_all {
+    background: #fff;
+}
+
+.arlo_tm_about_wrapper_all .container {
+    max-width: 1180px;
+}
+
+.arlo_tm_about_wrap {
+    padding-bottom: 92px;
+}
+
+.arlo_tm_about_wrap .leftbox {
+    width: 32%;
+    padding-right: 34px;
+}
+
+.arlo_tm_about_wrap .rightbox {
+    width: 68%;
+    padding-left: 44px;
+}
+
+.arlo_tm_about_wrap .leftbox .about_image_wrap .image .inner {
+    border-radius: 14px;
+    background-position: center 25%;
+}
+
+.arlo_tm_about_wrap .leftbox .about_image_wrap .border .inner {
+    border: 2px solid var(--accent);
+    border-radius: 14px;
+}
+
+.arlo_tm_about_wrap .arlo_tm_mini_title_holder h4 {
+    color: var(--ink);
+    font-size: 23px;
+    line-height: 1.4;
+}
+
+.arlo_tm_about_wrap .definition p {
+    color: #536075;
+    font-size: 16px;
+    line-height: 1.85;
+}
+
+.arlo_tm_about_wrap .definition p strong,
+.arlo_tm_about_wrap .arlo_tm_animation_text_word {
+    color: var(--accent-dark);
+}
+
+.arlo_tm_about_wrap .about_short_contact_wrap {
+    margin-top: 26px;
+}
+
+.arlo_tm_about_wrap .about_short_contact_wrap ul li {
+    margin-bottom: 13px;
+    color: #536075;
+}
+
+.about_short_contact_wrap ul li label {
+    color: var(--ink);
+    font-size: 12px;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+}
+
+.arlo_tm_about_wrap .about_short_contact_wrap ul li a,
+.arlo_tm_contact_wrap_all .leftbox .short_info_wrap ul li a {
+    color: var(--accent-dark);
+    overflow-wrap: anywhere;
+}
+
+.arlo_tm_about_wrap .buttons_wrap ul li a,
+.arlo_tm_contact_wrap .arlo_tm_button a {
+    padding: 13px 24px;
+    color: var(--ink);
+    background: var(--accent);
+    border-radius: 999px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.arlo_tm_about_wrap .buttons_wrap ul li a:before,
+.arlo_tm_contact_wrap .arlo_tm_button a:before {
+    background: #d2f6a2;
+}
+
+.arlo_tm_skills_wrap {
+    margin: 0;
+    padding: 82px 0;
+    background: #edf2f5;
+}
+
+.arlo_tm_skills_wrap .inner_wrap {
+    align-items: flex-start;
+}
+
+.arlo_tm_skills_wrap .leftbox {
+    width: 32%;
+    padding-right: 38px;
+}
+
+.arlo_tm_skills_wrap .rightbox {
+    width: 68%;
+    padding-left: 44px;
+}
+
+.arlo_tm_skills_wrap .leftbox h4 {
+    color: var(--ink);
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    line-height: 1.35;
+}
+
+.arlo_tm_skills_wrap .leftbox p {
+    color: var(--muted);
+}
+
+.skill_tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.skill_tags li {
+    padding: 9px 14px;
+    color: var(--ink-soft);
+    background: #fff;
+    border: 1px solid #dce5e9;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.arlo_tm_services_wrap,
+.arlo_tm_portfolio_wrapper_all {
+    background: var(--paper);
+}
+
+.arlo_tm_services_wrap {
+    margin: 0;
+    padding: 82px 0 56px;
+}
+
+.arlo_tm_services_wrap .container,
+.arlo_tm_portfolio_wrapper_all .container,
+#contact > .container {
+    max-width: 1180px;
+}
+
+.arlo_tm_services_wrap .list_wrap ul li .inner {
+    min-height: 222px;
+    padding: 30px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    box-shadow: var(--card-shadow);
+}
+
+.arlo_tm_services_wrap .list_wrap ul li .inner:hover {
+    top: -4px;
+    box-shadow: 0 22px 52px rgba(14, 27, 48, .13);
+}
+
+.arlo_tm_services_wrap .list_wrap ul li .icon .svg {
+    color: var(--accent-dark);
+}
+
+.arlo_tm_services_wrap .list_wrap ul li .title_service h3 {
+    color: var(--ink);
+    font-size: 19px;
+}
+
+.arlo_tm_services_wrap .list_wrap ul li .text p {
+    color: var(--muted);
+}
+
+.arlo_tm_portfolio_wrapper_all {
+    padding: 76px 0 64px;
+}
+
+.arlo_tm_title_holder.portfolio {
+    padding-bottom: 42px;
+}
+
+.arlo_tm_portfolio_filter li {
+    margin-right: 24px;
+}
+
+.arlo_tm_portfolio_filter li a {
+    padding: 8px 14px;
+    color: var(--muted);
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    font-size: 12px;
+    letter-spacing: .04em;
+}
+
+.arlo_tm_portfolio_filter li a.current,
+.arlo_tm_portfolio_filter li a:hover {
+    color: var(--ink);
+    background: var(--accent);
+    border-color: var(--accent);
+}
+
+.arlo_tm_portfolio_list > li {
+    padding-left: 18px;
+    margin-bottom: 18px;
+}
+
+.arlo_tm_portfolio_list {
+    margin-left: -18px;
+}
+
+.arlo_tm_portfolio_list .entry {
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(14, 27, 48, .06);
+}
+
+.arlo_tm_portfolio_list .arlo_tm_portfolio_image_main {
+    transition: transform .45s ease;
+}
+
+.arlo_tm_portfolio_list .entry:hover .arlo_tm_portfolio_image_main {
+    transform: scale(1.04);
+}
+
+.arlo_tm_portfolio_titles {
+    color: #fff;
+    background: var(--ink);
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+.arlo_tm_portfolio_titles .work__cat {
+    color: var(--ink);
+    background: var(--accent);
+    border-radius: 0 0 6px 6px;
+    font-weight: 600;
+    letter-spacing: .04em;
+}
+
+#testimonials {
+    display: none;
+}
+
+#contact {
+    padding-top: 78px;
+    background: #fff;
+}
+
+.arlo_tm_title_holder.contact {
+    padding-bottom: 42px;
+}
+
+.arlo_tm_contact_wrap_all {
+    background: #fff;
+}
+
+.arlo_tm_contact_wrap_all .container {
+    max-width: 1180px;
+}
+
+.arlo_tm_contact_wrap_all .leftbox {
+    width: 48%;
+    padding-right: 52px;
+}
+
+.arlo_tm_contact_wrap_all .rightbox {
+    width: 52%;
+}
+
+.arlo_tm_contact_wrap_all .leftbox .short_info_wrap ul li {
+    margin-bottom: 17px;
+    color: var(--muted);
+}
+
+.arlo_tm_contact_wrap_all .leftbox .short_info_wrap ul li label {
+    color: var(--ink);
+}
+
+.contact_cta {
+    min-height: 180px;
+    padding: 34px;
+    background: var(--ink);
+    border-radius: 18px;
+    box-shadow: var(--card-shadow);
+}
+
+.contact_cta p {
+    margin: 0 0 24px;
+    color: #d7dfeb;
+    font-size: 17px;
+}
+
+.contact_cta a {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+    padding: 12px 19px;
+    color: var(--ink);
+    background: var(--accent);
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.contact_cta a:hover {
+    background: #d2f6a2;
+    transform: translateY(-2px);
+}
+
+.arlo_tm_totop {
+    background: var(--accent);
+    border-radius: 999px;
+}
+
+.arlo_tm_totop:before {
+    background: #d2f6a2;
+}
+
+.arlo_tm_totop:after {
+    border-bottom-color: var(--ink);
+}
+
+.arlo_tm_footer_wrap {
+    margin-top: 68px;
+    padding: 22px 0;
+    background: #f4f7f8;
+}
+
+.arlo_tm_footer_wrap p {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.arlo_tm_mobile_header_wrap {
+    background: var(--ink);
+}
+
+.arlo_tm_mobile_header_wrap .main_wrap {
+    background: var(--ink);
+}
+
+.arlo_tm_mobile_header_wrap .logo img {
+    max-width: 150px;
+    max-height: 42px;
+}
+
+.arlo_tm_mobile_menu_wrap {
+    background: #111d32;
+}
+
+.arlo_tm_mobile_menu_wrap .mob_menu > ul > li a {
+    color: #e5ebf3;
+    font-size: 15px;
+}
+
+@media (max-width: 1200px) {
+    .arlo_tm_about_wrap .leftbox {
+        display: block;
+        width: 30%;
+    }
+
+    .arlo_tm_about_wrap .rightbox {
+        width: 70%;
+        padding-left: 34px;
+    }
+}
+
+@media (max-width: 1040px) {
+    .arlo_tm_rightpart {
+        padding-left: 0;
+    }
+
+    .arlo_tm_about_wrap .leftbox,
+    .arlo_tm_about_wrap .rightbox,
+    .arlo_tm_skills_wrap .leftbox,
+    .arlo_tm_skills_wrap .rightbox {
+        width: 100%;
+        padding: 0;
+    }
+
+    .arlo_tm_about_wrap .leftbox {
+        max-width: 320px;
+        margin: 0 auto 48px;
+    }
+
+    .arlo_tm_skills_wrap .leftbox {
+        margin-bottom: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .arlo_tm_universal_box_wrap.particle {
+        min-height: 590px;
+    }
+
+    .arlo_tm_about_wrap {
+        padding-bottom: 66px;
+    }
+
+    .arlo_tm_skills_wrap,
+    .arlo_tm_services_wrap,
+    .arlo_tm_portfolio_wrapper_all {
+        padding-top: 64px;
+        padding-bottom: 48px;
+    }
+
+    .arlo_tm_contact_wrap_all .leftbox,
+    .arlo_tm_contact_wrap_all .rightbox {
+        width: 100%;
+        padding: 0;
+    }
+
+    .arlo_tm_contact_wrap_all .leftbox {
+        margin-bottom: 28px;
+    }
+
+    .arlo_tm_services_wrap .list_wrap ul li .inner {
+        min-height: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .arlo_tm_hero_header_wrap .image_wrap {
+        width: 126px;
+        height: 126px;
+    }
+
+    .arlo_tm_title_holder {
+        padding-bottom: 38px;
+    }
+
+    .arlo_tm_portfolio_filter li {
+        margin-right: 8px;
+    }
+
+    .arlo_tm_portfolio_filter li a {
+        padding: 7px 10px;
+    }
+
+    .contact_cta {
+        padding: 26px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+    }
+}

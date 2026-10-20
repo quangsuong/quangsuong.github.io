@@ -20,7 +20,6 @@ jQuery(document).ready(function(){
 	arlo_tm_anchor();
 	arlo_tm_contact_form();
 	arlo_tm_owl_carousel();
-	arlo_tm_animate_text();
 	arlo_tm_projects();
 	arlo_tm_miniboxes();
 	arlo_tm_isotope();
@@ -512,7 +511,7 @@ function arlo_tm_animate_text(){
 	var animateSpan			= jQuery('.arlo_tm_animation_text_word');
 	
 		animateSpan.typed({
-			strings: ["Freelancer", "UI/UX Designer", "Mobile Developer"],
+			strings: ["mobile developer", "web developer", "software developer"],
 			loop: true,
 			startDelay: 1e3,
 			backDelay: 2e3
